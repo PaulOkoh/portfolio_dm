@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-    
+
     <title>Portfolio</title>
   </head>
   <body>
@@ -39,8 +39,8 @@
       <h1 class="section__title section__title--intro">
         Hi, I am <strong>Paul Okoh</strong>
       </h1>
-      <p class="section__subtitle section__title--intro">front-end dev</p>
-      <img src="assets/paulpic.jpg" alt="picture of a man" />
+      <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+      <img src="assets/paulpic.jpg" alt="picture of a man" class="intro__img" />
     </section>
 
     <!-- My Services -->
@@ -77,11 +77,11 @@
         <p></p>
         <p></p>
       </div>
-      <img src="#" alt="">
+      <img src="assets/paulpic.jpg" alt="" class="about-me__img">
     </section>
      <section class="my-work" id="work">
-      <h2 class="section__title">My Work</h2>
-      <p class="section__subtitle"></p>
+      <h2 class="section__title section__title--work">My Work</h2>
+      <p class="section__subtitle section__subtitle--work"></p>
 
       <div class="portfolio">
         <a href="#" alt="" class="portfolio__img">
@@ -90,14 +90,33 @@
       </div>
      </section>
 
-     <footer>
+     <footer class="footer">
       <a href="mailto:pauldokoh@gmail.com">pauldokoh@gmail.com</a>
       <ul class="social-list">
-        <li class="social-list__item"><a class="social-list__link" href="https://twitter.com"></a></li>
-        <li class="social-list__item"><a class="social-list__link"></a></li>
-        <li class="social-list__item"><a class="social-list__link"></a></li>
-        <li class="social-list__item"><a class="social-list__link"></a></li>
-        
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com">
+            <i class="fab fa-github"></i>
+        </a>
+      </li>
+        <li class="social-list__item">
+          <a class="social-list__link">
+            <i class="fab fa-linkedin"></i>
+
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link">
+            <i class="fab fa-twitter"></i>
+
+          </a>
+        </li>
+        <!-- <li class="social-list__item">
+          <a class="social-list__link">
+            <i class="fab fa-react"></i>
+
+          </a>
+        </li>
+         -->
       </ul>
      </footer>
   </body>
