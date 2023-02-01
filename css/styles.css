@@ -13,7 +13,7 @@
 
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-accent: #05493e;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -38,8 +38,8 @@ html {
 }
 
 body {
-  background: var(--clr-light);
-  color: var(--clr-dark);
+  background: var(--clr-dark);
+  color: var(--clr-light);
   margin: 0;
   font-family:var(--ff-primary);
   font-size: var(--fs-body);
@@ -212,7 +212,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background: var(--clr-dark);
+  background: var(--clr-light);
   width: 2em;
   height: 3px;
   border-radius: 1em;
@@ -284,13 +284,13 @@ header {
 }
 
 .section__title--services {
-  color: var(--clr-account);
+  color: var(--clr-accent);
   position: relative;
 }
 
 .section__title--services::after {
   content: '';
-  display: block;
+  display: inline-block;
   width: 2em;
   height: 1px;
   margin: 0.5em auto 1em;
@@ -325,8 +325,11 @@ header {
 }
 
 .about-me__img {
-  box-shadow: var(--bs);
+  /* box-shadow: var(--bs); */
+  color: var(--clr-light);
 }
+
+
 
 @media (min-width: 600px) {
   .about-me {
@@ -358,6 +361,16 @@ header {
     position: relative;
     z-index: 2;
   }
+}
+
+.technologies {
+  display: flex;
+  align-items: center;
+}
+
+.tech__icon {
+  max-width: 200px;
+  
 }
 
 .my-work {
